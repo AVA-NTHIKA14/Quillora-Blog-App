@@ -31,9 +31,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env.local
-# local auth data
-data/users.json
+.env*
 
 # vercel
 .vercel
@@ -41,8 +39,3 @@ data/users.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-
-log
-.next-dev.err.log
-.next-dev.log

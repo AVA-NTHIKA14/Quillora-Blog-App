@@ -57,10 +57,7 @@ export function AuthForm() {
           <h1 className="headline">
             Real sign in for a reading and writing home that finally remembers you.
           </h1>
-          <p className="body-copy">
-            Your account now uses real password hashing and signed sessions, so drafts,
-            profile access, and member routes are no longer powered by placeholder state.
-          </p>
+          
 
           <blockquote className="testimonial">
             <p className="testimonial-quote">
@@ -250,10 +247,7 @@ export function AuthForm() {
             </form>
           )}
 
-          <div className="security-note">
-            Passwords are stored as salted hashes, and your session is kept in a signed
-            `httpOnly` cookie.
-          </div>
+          
 
           <p className="signup-hint">
             {activeTab === "signin" ? "Need an account? " : "Already have an account? "}
@@ -268,11 +262,7 @@ export function AuthForm() {
             </button>
           </p>
 
-          <p className="home-link-row">
-            <Link href="/" className="home-link">
-              Return to app entry
-            </Link>
-          </p>
+        
         </div>
       </div>
 

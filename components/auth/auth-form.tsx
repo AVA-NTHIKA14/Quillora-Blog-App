@@ -80,7 +80,7 @@ export function AuthForm() {
             {activeTab === "signin" ? "Welcome back" : "Create your account"}
           </p>
           <h2 className="form-title">
-            {activeTab === "signin" ? "Sign in to your orbit" : "Join the orbit"}
+            {activeTab === "signin" ? "Sign in to your Space" : "Join the orbit"}
           </h2>
 
           <div className="tab-switcher" role="tablist" aria-label="Authentication mode">

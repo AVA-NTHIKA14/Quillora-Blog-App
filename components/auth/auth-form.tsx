@@ -71,7 +71,7 @@ export function AuthForm() {
         <span className="dot dot-mid" />
         <span className="dot dot-low" />
 
-        <footer className="left-footer">Secure local auth for Quillora</footer>
+        <footer className="left-footer"><p>© 2026 All rights reserved. Designed and developed by Avanthika K S.</p></footer>
       </div>
 
       <div className="right-panel">

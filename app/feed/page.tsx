@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 
 import { SessionControls } from "@/components/auth/session-controls"
+import { Footer } from "@/components/footer"
 import { APP_NAV_ITEMS } from "@/lib/navigation"
 
 const ARTICLES = [
@@ -206,16 +207,7 @@ export default function FeedPage() {
         </div>
       </main>
 
-      <footer className="footer">
-        <p className="footerCopy">© 2026 Quillora · Where Space Meets Creativity</p>
-        <nav className="footerNav">
-          {["About", "Guidelines", "Accessibility", "Contact"].map((label) => (
-            <Link key={label} href="#" className="footerLink">
-              {label}
-            </Link>
-          ))}
-        </nav>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         * {
@@ -528,37 +520,7 @@ export default function FeedPage() {
           transform: translateY(-1px);
         }
 
-        .footer {
-          background: #0d0d1a;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 1.4rem 2rem;
-          flex-wrap: wrap;
-          gap: 1rem;
-        }
 
-        .footerCopy {
-          font-size: 0.82rem;
-          color: #aba3b5;
-        }
-
-        .footerNav {
-          display: flex;
-          gap: 1.5rem;
-          flex-wrap: wrap;
-        }
-
-        .footer :global(.footerLink) {
-          font-size: 0.82rem;
-          color: #cdc6d6;
-          text-decoration: none;
-          transition: color 0.2s;
-        }
-
-        .footer :global(.footerLink:hover) {
-          color: #f1ece3;
-        }
 
         @media (max-width: 980px) {
           .navbar {
